@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+}
+#images{
+    display: flex;  
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+#images img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 20px;
+}
+#images img:hover{
+    transform: scale(1.1);
+}
