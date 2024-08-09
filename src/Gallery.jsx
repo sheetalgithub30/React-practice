@@ -25,15 +25,15 @@ function Gallery() {
   }
 
   return (
-    <div>
+    <div className='bg-lime-500'>
       <input type="url" placeholder='enter url' value={input} onChange={(e)=>setInput(e.currentTarget.value)}></input>
-      <button onClick={handle}>Add</button>
+      <button className='bg-blue-700 px-4 m-4' onClick={handle}>Add</button>
 
       {list && list.map((e,index)=>{
         return e.val ?
         <div key={index}>
-      <img className='w-[50%] p-10' src={e.text}></img>
-     <button onClick={()=>{del(index)}}>Del</button>
+      <img className='w-72 h-72 p-10' src={e.text}></img>
+     <button className='bg-red-600 px-4 m-4' onClick={()=>{del(index)}}>Del</button>
      </div>
         :
         <div>
@@ -42,16 +42,16 @@ function Gallery() {
       
       })}
 
-      <div>
-        <hr></hr>
-        <h1>In bin</h1>
+      <div className='bg-orange-400'>
+        <hr className='h-3 bg-black'></hr>
+        <h1 className='text-5xl text-center' >In bin</h1>
         {list && list.map((e,index)=>{
         return e.val ?
        <></>
         :
         <div key={index}>
-      <img className='w-[50%] p-10' src={e.text}></img>
-     <button onClick={()=>{restore(index)}}>Restore</button>
+      <img className='w-72 h-72 p-10 ' src={e.text}></img>
+     <button className='bg-yellow-400 px-4 m-4' onClick={()=>{restore(index)}}>Restore</button>
      </div>
       
       })}

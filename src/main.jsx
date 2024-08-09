@@ -2,7 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 // import Counter from './Counter.jsx'
 import './index.css'
-import Gallery from './Gallery'
+import Tabs from './Tabs'
+// import Timer from './Timer'
+// import MultiStepForm from './MultiStepForm'
+// import Accordion from './Accordion'
+// import Gallery from './Gallery'
 // import FeedbackModel from './FeedbackModel'
 // import ChipsInput from './ChipsInput'
 // import WordCount from './WordCount'
@@ -36,6 +40,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <TableColorizer/> */}
     {/* <ChipsInput/> */}
     {/* <FeedbackModel/> */}
-    <Gallery/>
+    {/* <Gallery/> */}
+    {/* <Accordion/> */}
+    {/* <MultiStepForm/> */}
+    {/* <Timer/> */}
+    <Tabs/>
   </React.StrictMode>,
 )
