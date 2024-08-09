@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 // import Counter from './Counter.jsx'
 import './index.css'
+import Offer from './Offer'
 // import Tab from './Tab'
 // import Tabs from './Tabs'
 // import Timer from './Timer'
@@ -47,5 +48,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <Timer/> */}
     {/* <Tabs/> */}
     {/* <Tab/> */}
+    <Offer/>
   </React.StrictMode>,
 )
