@@ -2,7 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 // import Counter from './Counter.jsx'
 import './index.css'
-import Tabs from './Tabs'
+// import Tab from './Tab'
+// import Tabs from './Tabs'
 // import Timer from './Timer'
 // import MultiStepForm from './MultiStepForm'
 // import Accordion from './Accordion'
@@ -44,6 +45,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <Accordion/> */}
     {/* <MultiStepForm/> */}
     {/* <Timer/> */}
-    <Tabs/>
+    {/* <Tabs/> */}
+    {/* <Tab/> */}
   </React.StrictMode>,
 )
