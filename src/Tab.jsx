@@ -21,31 +21,30 @@ const list = [
   },
 ];
 
-
-
 function Tab() {
-  const[data,setData] = useState(list);
+  const [data, setData] = useState(list);
 
   function handle(index) {
     let new_data = [...data];
-     new_data.map((e)=>{
-      e.value = false
-    })
-    new_data[index].value= true;
-    setData(new_data)
+    new_data.map((e) => {
+      e.value = false;
+    });
+    new_data[index].value = true;
+    setData(new_data);
   }
 
-  
   return (
     <div className="border-2 border-black w-[20rem]">
       {data.map((e, index) => {
-        return (<>
-          <button onClick={() => handle(index)} className={`p-5 ${e.value? 'bg-blue-600':"bg-blue-400"}`}>
-            {e.name}
-          </button>
-
-          
-        </>
+        return (
+          <>
+            <button
+              onClick={() => handle(index)}
+              className={`p-5 ${e.value ? "bg-blue-600" : "bg-blue-400"}`}
+            >
+              {e.name}
+            </button>
+          </>
         );
       })}
 
